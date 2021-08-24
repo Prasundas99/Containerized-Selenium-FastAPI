@@ -23,7 +23,8 @@ def searchWithSelenium(query):
     title = []
     # Specify number of pages on google search, each page contains 10 links
     n_pages = 6
-    wd = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+    wd = webdriver.Chrome(ChromeDriverManager().install(),
+                          options=chrome_options)
 
     for page in range(1, n_pages):
         url = "http://www.google.com/search?q=" + \
@@ -40,10 +41,5 @@ def searchWithSelenium(query):
     print("-------------------Scrapped Items---------------------------")
     print(links)
     print("-------------------Scrapped Items Ended---------------------")
-    #Returns the list of links and title after google search 
+    # Returns the list of links and title after google search
     return links
-
-
-
-
-
