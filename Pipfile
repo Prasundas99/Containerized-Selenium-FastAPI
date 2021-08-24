@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+uvicorn = "*"
+nltk = "*"
+websearch = "*"
+requests = "*"
+bs4 = "*"
+pandas = "*"
+selenium = "*"
+webdriver-manager = "*"
+selenium-wire = "*"
+msedge-selenium-tools = "*"
+python-docx = "*"
+
+[requires]
+python_version = "3.9"
